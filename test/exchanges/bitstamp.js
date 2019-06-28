@@ -2,17 +2,17 @@
 // if you need to test Gekko against real mocked data
 // uncomment the following:
 
-// var fs = require('fs');
-// var bitstamp = require('bitstamp');
-// var bs = new bitstamp;
-// bs.transactions('btcusd', (err, data) => {
-//   if(err)
-//     throw err;
+var fs = require('fs');
+var bitstamp = require('bitstamp');
+var bs = new bitstamp;
+ bs.transactions('btcusd', (err, data) => {
+   if(err)
+     throw err;
 
-//   var json = JSON.stringify(data, null, 4);
-//   fs.writeFileSync('./data/bitstamp_trades.json', json);
-// });
-// return;
+   var json = JSON.stringify(data, null, 4);
+   fs.writeFileSync('./data/bitstamp_trades.json', json);
+ });
+return;
 
 var chai = require('chai');
 var expect = chai.expect;

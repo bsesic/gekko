@@ -1,0 +1,19 @@
+# Created by Benjamin Schnabel
+# Source:
+
+[MACD]
+short = 10
+long = 21
+signal = 9
+
+[RSI]
+maxRSI = 70
+minRSI = 10
+interval = 9
+
+#Stop loss in percentage
+stopLoss = 1
+
+#Sell percentage
+
+sellPercentage = 5
